@@ -1,1 +1,0 @@
-import{j as e,F as r}from"./vendor.1dd7eaff.js";function n(){return e(r,{children:e("div",{className:" w-full h-screen flex justify-center items-center text-red-400 dark:text-green-400",children:"IM Iron MAN"})})}export{n as default};
