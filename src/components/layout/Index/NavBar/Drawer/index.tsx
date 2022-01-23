@@ -14,12 +14,12 @@ import {
     AccordionPanel,
     Box,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import { HiOutlineCog, HiOutlineHome } from "react-icons/hi";
 import { MdSupervisorAccount, MdOutlineContactMail } from "react-icons/md";
 import { FaBloggerB, FaMoneyBillAlt, FaRegLightbulb } from "react-icons/fa";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import Logo from "@/components/icons/logo";
 const DarkModeToggleSwitch = dynamic(() => import("../../../../shared/ToggleThemeSwitch"));
 
 //
@@ -35,21 +35,13 @@ function MyDrawer({ isOpen, onClose }: any) {
                         className="bg-primaryLight dark:bg-primaryDark"
                     >
                         <DrawerHeader>
-                            <div className=" text-lightAccent flex  justify-between">
-                                <Image
-                                    src="/logo.webp"
-                                    alt="Minvest Logo"
-                                    height={200}
-                                    width={300}
-                                    className="h-28"
-                                    layout="responsive"
-                                />
-                                <h1 className="items-center mt-10">MInvest</h1>
-
-                                <CloseButton
-                                    display={{ base: "flex", md: "none" }}
-                                    onClick={onClose}
-                                />
+                            <CloseButton
+                                className="right-0 flex inset-y-0 ml-[19.25rem]"
+                                onClick={onClose}
+                            />
+                            <div className="inset-y-0 right-0 flex items-center ">
+                                <Logo />
+                                <h1 className="text-xl -ml-2">MAYA ENTERPRISES</h1>
                             </div>
                         </DrawerHeader>
                         <hr />
@@ -63,19 +55,11 @@ function MyDrawer({ isOpen, onClose }: any) {
                                         </div>
                                     </h2>
                                 </Link>
-                                <Link href="/about">
+                                <Link href="#about">
                                     <h2 className=" flex select-none mb-2 items-center h-12  ">
                                         <MdSupervisorAccount className="h-14 mb-1 text-[2rem]  text-lightAccent dark:text-lightAccent" />{" "}
                                         <div className="ml-3 text-xl cursor-pointer hover:text-lightAccent">
                                             About
-                                        </div>
-                                    </h2>
-                                </Link>
-                                <Link href="/pricing">
-                                    <h2 className=" flex select-none mb-2 items-center h-12  ">
-                                        <FaMoneyBillAlt className="h-14 mb-1 text-[2rem]  text-lightAccent dark:text-lightAccent" />{" "}
-                                        <div className="ml-3 text-xl cursor-pointer hover:text-lightAccent">
-                                            Pricing
                                         </div>
                                     </h2>
                                 </Link>
@@ -98,7 +82,7 @@ function MyDrawer({ isOpen, onClose }: any) {
                                                 <FaMoneyBillAlt className="ml-8 h-14 text-[2rem] text-lightAccent dark:text-lightAccent " />
 
                                                 <div className="ml-2 text-xl hover:text-lightAccent mb-1 cursor-pointer">
-                                                    Maya Enterprises
+                                                    Minvest
                                                 </div>
                                             </h2>
                                         </Link>

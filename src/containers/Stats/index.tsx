@@ -3,7 +3,7 @@ import StatsItem from "./StatsItem";
 function Stats() {
     return (
         <>
-            <div className="container px-5 lg:mt-32 mx-auto w-screen h-full bg-primaryLight dark:bg-primaryDark">
+            <div className="container px-5  mx-auto w-screen  bg-primaryLight dark:bg-primaryDark">
                 <section className="px-4 py-12 mx-auto max-w-7xl">
                     <div className="flex flex-wrap items-center justify-between mb-4 space-y-1">
                         <h2 className="text-xl font-semibold text-primaryDark  dark:text-primaryLight justify-center">

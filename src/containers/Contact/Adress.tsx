@@ -14,7 +14,7 @@ function Adress() {
                     <h2 className="title-font font-semibold text-primaryDark  dark:text-primaryLight  tracking-widest text-xs">
                         EMAIL
                     </h2>
-                    <a className="text-lightAccent leading-relaxed">example@email.com</a>
+                    <p className="text-lightAccent leading-relaxed">example@email.com</p>
                     <h2 className="title-font font-semibold text-primaryDark  dark:text-primaryLight  tracking-widest text-xs mt-4">
                         PHONE
                     </h2>

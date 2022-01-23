@@ -9,7 +9,7 @@ interface StatsProps {
 function StatsItem({ title, number }: StatsProps) {
     return (
         <>
-            <div className="p-6 card drop-shadow shadow-md dark:shadow-lightAccent">
+            <div className="p-6 card bg-[#D9E8FE] dark:bg-primaryDark drop-shadow shadow-md dark:shadow-lightAccent">
                 <div className="flex items-start justify-between">
                     <h2 className="mb-2 font-mono text-2xl font-light leading-none text-primaryDark  dark:text-primaryLight truncate">
                         <Counter from={0} to={number} />

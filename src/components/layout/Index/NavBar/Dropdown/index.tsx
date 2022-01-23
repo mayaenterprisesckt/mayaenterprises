@@ -4,19 +4,19 @@ function Dropdown({ name, children }: { name: string; children: ReactNode }) {
     const [flyer, setFlyer] = useState(false);
     const [, setFlyerTwo] = useState(false);
     return (
-        <div>
-            <div className="relative">
+        <div onMouseLeave={() => setFlyer(false)}>
+            <div className="relative -ml-2 -mr-3">
                 <button
                     type="button"
                     className="
-                   group rounded-md text-red-400 inline-flex items-center text-base font-medium focus:outline-none pb-8'
+                   group  rounded-md text-red-400 inline-flex items-center text-base font-medium focus:outline-none pb-8'
                   "
-                    onMouseEnter={() => (setFlyer(!flyer), setFlyerTwo(false))}
+                    onMouseEnter={() => (setFlyer(true), setFlyerTwo(false))}
                 >
                     <span
                         className={
                             flyer === true
-                                ? "cursor-pointe text-lightAccent  font-semibold tr04 "
+                                ? "cursor-pointer text-lightAccent  font-semibold tr04 "
                                 : "cursor-pointer text-black dark:text-gray-300  font-semibold tr04 "
                         }
                     >

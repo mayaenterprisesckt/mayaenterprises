@@ -2,10 +2,10 @@ function BlogCard() {
     return (
         <div className="group mb-6 cursor-pointer">
             <div
-                className="h-full mr-4 shadow-xl 
+                className="h-full mr-4 shadow-xl
         lg:group-hover:shadow-lightAccent
         md:group-hover:shadow-lightAccent
-                      lg:group-hover:p-4 
+                      lg:group-hover:p-4
                       group-hover:shadow-2xl
                       lg:group-hover:translate-all
                       transform-gpu
@@ -25,7 +25,7 @@ function BlogCard() {
                     Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
                     tousled waistcoat.
                 </p>
-                <a className="text-purple-500 inline-flex items-center cursor-pointer">
+                <p className="text-purple-500 inline-flex items-center cursor-pointer">
                     Learn More
                     <svg
                         className="w-4 h-4 ml-2"
@@ -39,7 +39,7 @@ function BlogCard() {
                         <path d="M5 12h14" />
                         <path d="M12 5l7 7-7 7" />
                     </svg>
-                </a>
+                </p>
                 <div className=" text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
                     <span className="text-primaryDark  dark:text-primaryLight  mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                         <svg

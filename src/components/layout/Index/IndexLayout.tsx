@@ -14,17 +14,19 @@ interface IndexLayoutProps {
 function IndexLayout({ PageTitle, PageDesc, children }: IndexLayoutProps) {
     return (
         <>
-            <Head>
-                <title>{PageTitle}</title>
-                <meta name="description" content={`|${PageDesc}`} />
-            </Head>
-            <div className="w-screen m-0 p-0 bg-primaryLight dark:bg-primaryDark">
-                <NavBar />
-                {children}
-            </div>
-            <div className="pt-5">
-                <Footer />
-            </div>
+            <>
+                <Head>
+                    <title>{PageTitle}</title>
+                    <meta name="description" content={`|${PageDesc}`} />
+                </Head>
+                <div className="w-screen m-0 p-0 bg-primaryLight dark:bg-primaryDark h-[100vh]">
+                    <NavBar />
+                    {children}
+                    <div className="pt-5">
+                        <Footer />
+                    </div>
+                </div>
+            </>
         </>
     );
 }

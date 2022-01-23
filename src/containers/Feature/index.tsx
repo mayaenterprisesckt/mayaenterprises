@@ -4,7 +4,7 @@ import { FaMoneyBillAlt, FaRegLightbulb, FaBloggerB } from "react-icons/fa";
 function Featurs() {
     return (
         <div>
-            <section className="text-primaryDark  dark:text-primaryLight body-font bg-gray-50  dark:bg-primaryDark">
+            <section className="text-primaryDark   dark:text-primaryLight body-font bg-gray-50  dark:bg-primaryDark">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="text-center mb-20">
                         <h1 className="mb-5 text-6xl Avenir font-semibold text-gray-900 dark:text-white">
